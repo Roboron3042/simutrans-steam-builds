@@ -1,0 +1,12 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 27a05b33a..d07ac929d 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -377,6 +377,7 @@ endif (APPLE)
+ # Package
+ #
+ if (APPLE)
++	set(SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}")
+ 	include(MacBundle)
+ endif ()
+ 
